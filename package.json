@@ -3,8 +3,9 @@
   "sideEffects": [
     "*.vue"
   ],
-  "version": "1.0.1",
-  "description": "",
+  "version": "<%= version %>",
+  "releaseVersion": "1.0.1",
+  "description": "<%= description %>",
   "private": "<%= private %>",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --profile --progress --config webpack.prod.js",
@@ -15,7 +16,7 @@
     "pre-commit": "lint-staged"
   },
   "author": "<%= author %>",
-  "license": "ISC",
+  "license": "<%= license %>",
   "dependencies": {
     "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
